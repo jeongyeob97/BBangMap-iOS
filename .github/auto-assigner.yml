@@ -1,0 +1,24 @@
+5anniversary:
+  - ehdustj1001
+  - jeongyeob97
+  - ezidayzi
+
+ezidayzi:
+  - havetherain
+  - ehdustj1001
+  - jeongyeob97
+
+havetherain:
+  - ehdustj1001
+  - ezidayzi
+  - 5anniversary
+
+ehdustj1001:
+  - 5anniversary
+  - jeongyeob97
+  - zidayzi
+
+jeongyeob97:
+  - havetherain
+  - ehdustj1001
+  - 5anniversary
