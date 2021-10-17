@@ -9,8 +9,9 @@ target 'BBangmap' do
 
   # Pods for BBangmap
 
+	pod 'NMapsMap'
+	pod 'Then'
 	pod 'SwiftLint'
-  pod 'Then'
 
 end
 

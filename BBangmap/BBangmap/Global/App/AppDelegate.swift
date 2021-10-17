@@ -7,6 +7,8 @@
 
 import UIKit
 
+import NMapsMap
+
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -14,6 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         _ application: UIApplication,
         didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?
     ) -> Bool {
+        NMFAuthManager.shared().clientId = "3qs6mgh5x0"
         return true
     }
 

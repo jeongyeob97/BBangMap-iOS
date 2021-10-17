@@ -1,6 +1,0 @@
-framework module Pods_BBangmap {
-  umbrella header "Pods-BBangmap-umbrella.h"
-
-  export *
-  module * { export * }
-}
