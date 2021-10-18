@@ -15,6 +15,7 @@ class BaseViewController: UIViewController {
 
     init() {
         super.init(nibName: nil, bundle: nil)
+
     }
 
     required init?(coder: NSCoder) {
@@ -24,9 +25,18 @@ class BaseViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         render()
+        setupBaseNavigationBar()
     }
 
     private func render() {
         view.backgroundColor = .white
+    }
+
+    private func setupBaseNavigationBar() {
+        guard let navigationBar = navigationController?.navigationBar else { return }
+        navigationBar.setBackgroundImage(UIImage(), for: .default)
+        navigationBar.shadowImage = UIImage()
+        navigationBar.isTranslucent = true
+        navigationBar.tintColor = .black
     }
 }

@@ -14,4 +14,15 @@ final class SplashViewController: BaseViewController {
 
     }
 
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+
+        present()
+    }
+
+    private func present() {
+        let viewController = TabBarController()
+        viewController.modalPresentationStyle = .fullScreen
+        present(viewController, animated: false)
+    }
 }

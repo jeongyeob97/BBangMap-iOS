@@ -9,9 +9,15 @@ target 'BBangmap' do
 
   # Pods for BBangmap
 
+	pod 'Kingfisher', '~> 6.2.1'
+	pod 'Moya/RxSwift', '~> 15.0'
 	pod 'NMapsMap'
-	pod 'Then'
+	pod 'RxCocoa', '~> 6.0'
+	pod 'RxGesture'
+	pod 'SnapKit', '~> 5.0.0'
 	pod 'SwiftLint'
+	pod 'SwiftKeychainWrapper', '~> 4.0.1'
+	pod 'Then'
 
 end
 
