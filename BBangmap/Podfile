@@ -10,14 +10,34 @@ target 'BBangmap' do
   # Pods for BBangmap
 
 	pod 'Kingfisher', '~> 6.2.1'
-	pod 'Moya/RxSwift', '~> 15.0'
 	pod 'NMapsMap'
+	pod 'RxSwift', '~> 6.0'
 	pod 'RxCocoa', '~> 6.0'
 	pod 'RxGesture'
 	pod 'SnapKit', '~> 5.0.0'
 	pod 'SwiftLint'
 	pod 'SwiftKeychainWrapper', '~> 4.0.1'
 	pod 'Then'
+	pod 'YPImagePicker'
+	pod 'lottie-ios'
+end
+
+target 'Network' do
+	use_frameworks!
+
+	inhibit_all_warnings!
+
+	pod 'Moya/RxSwift', '~> 15.0'
+
+end
+
+target 'DesignSystem' do
+	use_frameworks!
+
+	inherit! :search_paths
+	inhibit_all_warnings!
+
+	pod 'SnapKit', '~> 5.0.0'
 
 end
 
@@ -25,6 +45,6 @@ post_install do |pi|
     pi.pods_project.targets.each do |t|
         t.build_configurations.each do |config|
             config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '13.0'
+		end
 	end
-    end
 end
